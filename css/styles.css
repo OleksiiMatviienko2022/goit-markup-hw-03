@@ -17,11 +17,53 @@ body {
     letter-spacing: 0.03em;
 }
 
+
+
+
 /* Прибирання маркерів */
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
+
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+/* Класс для обнуления базовых свойств у списков (ul) */
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Класс для обнуления базовых свойств у ссылок */
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Свойства для корректного отображения картинок */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Свойства для обнуления курсива у address */
+address {
+    font-style: normal;
+}
+
 
 /* основний колір тексту сірий #757575 */
 /* другорядний колір тексту-заголовки чорний #212121 */
@@ -34,6 +76,26 @@ ul {
 /* колір телефон-пошта footer rgba(255, 255, 255, 0.6) */
  
 /*Стилі header*/
+
+.page-header {
+
+    background-color: var(--bacground-color);
+}
+
+
+.conteiner {
+
+    outline: 2px solid tomato;
+
+    margin-left: auto;
+    margin-right: auto;
+
+     width: 1170px;
+     padding-left: 15px;
+     padding-right: 15px;
+     
+     
+}
 
 .logo {
 
@@ -48,6 +110,11 @@ ul {
 
     }
 
+    .logo-footer {
+
+        margin-bottom: 20px;
+    }
+
 
 .logo-studioheader {
      color: #000000;
@@ -58,6 +125,8 @@ ul {
      color: var(--bacground-color);
     
     }
+
+    
 
 .nav .nav-link.current {
     color: var(--text-accent-color);
@@ -109,11 +178,26 @@ ul {
  /*Стилі головної сторінки main*/
 
  .hero {
+
+    outline: 2px solid tomato;
+
+    text-align: center;
+
      background-color: #2F303A;
+
+
  }
 
  .hero-title {
+
+    outline: 2px solid white;
+
+    margin-top: 0;
+    margin-bottom: 30px;
+
      color: var(--bacground-color);
+
+     
 
      font-weight: 900;
      font-size: 44px;
@@ -135,6 +219,12 @@ ul {
     letter-spacing: 0.06em;
 
     cursor: pointer;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 216px;
+
  }
 
 .hero-button:hover, .hero-button:focus {
@@ -165,6 +255,8 @@ ul {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+
+    margin-bottom: 50px;
     }
  
  .title-name {
@@ -174,12 +266,19 @@ ul {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+
+    margin-top: 0px;
+    margin-bottom: 10px;
+
     } 
 
     .values {
 
         font-size: 14px;
         line-height: 1.71;
+
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .team {
@@ -192,12 +291,19 @@ ul {
     
     }
 
+    .team-photo {
+
+        margin-bottom: 30px;
+    }
+
     .team-member {
         
         color: var(--header-color);
         font-weight: 500;
         font-size: 16px;
         line-height: 1.19;
+
+        margin-bottom: 10px;
     }
 
     
@@ -206,9 +312,18 @@ ul {
         font-weight: 400;
         font-size: 16px;
         line-height: 1.19;
+
+        margin-bottom: 0;
     }
 
     /*Стилі сторінки Портфоліо*/
+
+    .button-list {
+
+        margin-bottom: 56px;
+    }
+
+
 
     .portfolio-button {
 
@@ -220,12 +335,18 @@ ul {
         line-height: 1.63;
 
         cursor: pointer;
+
+        border-radius: 4px;
+        padding: 6px 22px;
+        min-width: 73px;
+
     }
 
     .portfolio-button:hover, .portfolio-button:focus {
 
         background-color: var(--text-accent-color);
         color: var(--bacground-color);
+        padding: 6px 25px;
         
     }
 
@@ -236,6 +357,11 @@ ul {
     .project {
 
     text-decoration: none;
+    } 
+
+    .projec-image {
+
+        margin-bottom: 20px;
     }
  
     .project-title {
@@ -246,6 +372,8 @@ ul {
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
+
+        margin-bottom: 4px;
     }
 
     .project-filter { 
@@ -254,6 +382,8 @@ ul {
 
         font-size: 16px;
         line-height: 1.88;
+        margin-bottom: 0;
+
     }
 
 
@@ -287,16 +417,30 @@ ul {
         .google-map {
 
             color: var(--bacground-color);
-    
-    
-        }
 
-    .mail, .phone {
+            margin-bottom: 9px;
+    
+    }
+
+    .mail {
+
+    color: rgba(255, 255, 255, 0.6);
+
+    margin-bottom: 9px;
+    }
+
+    .phone {
 
      color: rgba(255, 255, 255, 0.6);
 
+
     }
 
-    
 
 
+
+
+
+        
+
+        
