@@ -88,10 +88,11 @@ address {
 
 .conteiner {    
 
+
     margin-left: auto;
     margin-right: auto;
 
-     width: 1170px;
+     width: 1200px;
      padding-left: 15px;
      padding-right: 15px;
      
@@ -228,7 +229,6 @@ address {
 
  .hero {
 
-    outline: 2px solid tomato;
 
     text-align: center;
 
@@ -239,7 +239,6 @@ address {
 
  .hero-title { 
     
-    padding-top: 200px;
     margin-top: 0;
     margin-bottom: 40px;    
 
@@ -254,10 +253,10 @@ address {
  }
 
  .hero-button {
-    margin-bottom: 200px;
 
     background-color: var(--text-accent-color);
     color: var(--bacground-color);
+    border-color: transparent;
 
     font-family: inherit;
     font-weight: 700;
@@ -278,6 +277,7 @@ address {
 .hero-button:hover, .hero-button:focus {
 
     background-color: #188CE8;
+
 
 }
 
@@ -322,17 +322,33 @@ address {
 
     } 
 
+    .section {
+
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
     .section-list {
-        display: flex;
+             display: flex;
+             flex-wrap: wrap;
     }
 
-    .section-list .section-item + .section-item  {
+    .section-item {
+
+        flex-basis: calc((100% - 90px) / 4);
+    
+    }
+
+    .section-list .section-image+.section-image {
         margin-left: 30px;
-
     }
+   
+    .section-list .section-item+.section-item {
+            margin-left: 30px;
+    
+        }
 
     .values {
-
         font-size: 14px;
         line-height: 1.71;
 
@@ -342,6 +358,7 @@ address {
 
     .team {
         background-color: var(--second-background-color);
+    
     }
 
     .team-item {
@@ -354,10 +371,13 @@ address {
     
     }
 
-    .team-photo {
+    .team-signature {
 
-        margin-bottom: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
+
+  
 
     .team-member {
         
@@ -378,7 +398,7 @@ address {
         line-height: 1.19;
         text-align: center;
 
-        margin-bottom: 30px;
+        
     }
 
     /*Стилі сторінки Портфоліо*/
@@ -390,10 +410,12 @@ address {
         display: flex;
         justify-content: center;
 
-        margin-top: 94px;
         margin-bottom: 50px;
+
     }
 
+
+   
     .button-list .button-item + .button-item {
 
         margin-left: 8px;
@@ -409,6 +431,7 @@ address {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.63;
+        border-color: transparent;
 
         cursor: pointer;
 
@@ -422,7 +445,6 @@ address {
 
         background-color: var(--text-accent-color);
         color: var(--bacground-color);
-        padding: 6px 25px;
         
     }
 
@@ -461,13 +483,15 @@ address {
 
     .project-border {
 
+        padding: 20px 24px;
+
         border-right: 1px solid #EEEEEE;
         border-bottom: 1px solid #EEEEEE;
         border-left: 1px solid #EEEEEE;
     }
  
     .project-title {
-        padding-left: 24px;
+    
         margin-bottom: 4px;
 
         color: var(--header-color);
@@ -481,7 +505,7 @@ address {
     }
 
     .project-filter { 
-        padding-left: 24px;
+        
         margin-bottom: 0;
 
         color: var(--paragraf-color);
@@ -496,8 +520,10 @@ address {
 
    /*Стилі footer*/ 
  
- footer {
+    .footer {
      background-color: #2F303A;
+     padding-top: 60px;
+     padding-bottom: 60px;
     }
 
 
@@ -520,11 +546,20 @@ address {
         font-style: normal;
     }
 
+    .map {
+
+        margin-top: 20px;
+        margin-bottom: 9px;
+    }
+
+    .mailto {
+        margin-bottom: 9px;
+    }
+
         .google-map {
 
             color: var(--bacground-color);
 
-            margin-bottom: 9px;
     
     }
 
