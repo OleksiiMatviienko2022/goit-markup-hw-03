@@ -39,6 +39,8 @@ p {
     margin-top: 0;
 }
 
+
+
 /* Класс для обнуления базовых свойств у списков (ul) */
 .list {
     list-style: none;
@@ -455,6 +457,13 @@ address {
 
         margin-bottom: 20px;
         background-color: #EEEEEE;
+    }
+
+    .project-border {
+
+        border-right: 1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
+        border-left: 1px solid #EEEEEE;
     }
  
     .project-title {
