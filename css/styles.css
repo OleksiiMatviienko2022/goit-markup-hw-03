@@ -229,6 +229,9 @@ address {
 
  .hero {
 
+    padding-top: 200px;
+    padding-bottom: 200px;
+
 
     text-align: center;
 
@@ -328,6 +331,11 @@ address {
         padding-bottom: 94px;
     }
 
+    .section-top {
+
+        padding-top: 0;
+    }
+
     .section-list {
              display: flex;
              flex-wrap: wrap;
@@ -392,6 +400,8 @@ address {
 
     
     .team-profession {
+
+        margin-bottom: 0;
 
         font-weight: 400;
         font-size: 16px;
@@ -458,7 +468,6 @@ address {
         flex-wrap: wrap;
         margin-top: -30px;
         margin-left: -30px;
-        margin-bottom: 94px;
     }
 
     .project-item {        
@@ -546,9 +555,13 @@ address {
         font-style: normal;
     }
 
-    .map {
+    .addres {
 
         margin-top: 20px;
+    }
+
+    .map {
+
         margin-bottom: 9px;
     }
 
